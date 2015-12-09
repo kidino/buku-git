@@ -18,35 +18,33 @@
     
 var parser = document.createElement('a');
 parser.href = window.location.href;
-
-parser.protocol; // => "http:"
-parser.hostname; // => "example.com"
-parser.port;     // => "3000"
-parser.pathname; // => "/pathname/"
-parser.search;   // => "?search=test"
-parser.hash;     // => "#hash"
-parser.host;     // => "example.com:3000"
-    
-    console.log(parser);
     
 function sanitize(tname){
     return tname.substr(2, tname.length - 2).trim();
 }
 
+function load_page(page){
+    
+    $.ajax({
+        method : 'get',
+        url : 'content/'+page+'.md'
+    })
+    .done(function(md){
+        $('.content').html( SnuOwnd.getParser().render(md) );
+    })
+    .fail(function(){
+        $('.content').html('<h1>Error 404</h1><h2>File Not Found</h2>');
+    });
+    
+}
+    
     $(document).ready(function(){
         
         var filename = sanitize(parser.search);
         if ( filename != '') {
-            $.ajax({
-                method : 'get',
-                url : 'content/'+filename+'.md'
-            })
-            .done(function(md){
-                $('.content').html( SnuOwnd.getParser().render(md) );
-            })
-            .fail(function(){
-                $('.content').html('<h1>Error 404</h1><h2>File Not Found</h2>');
-            });
+            load_page(filename);
+        } else {
+            load_page('default');
         }
             
     });
@@ -61,6 +59,7 @@ function sanitize(tname){
     
     <div class="sidebar"><h2>Menu</h2>
     <ul>
+        <li><a href="?/">Home</a></li>
         <li><a href="?/test-123">Test 123</a></li>
         <li><a href="?/test-456">Test 456</a></li>
     </ul>

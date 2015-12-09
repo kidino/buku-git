@@ -1,6 +1,8 @@
 Test 123
 --------
 
+![Alt text](images/test.png)
+
 **markItUp!** is a javascript over [jQuery](http://www.jquery.com "jQuery Website") plug-in which allow you to turn any textarea in a markup editor.
 
 **markItUp!** is a lightweight fully customizable engine made to easily fit all developers needs in their CMS, blogs, forums or websites.

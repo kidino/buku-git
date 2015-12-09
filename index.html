@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Buku Git</title>
+    
+    <link rel="stylesheet" href="css/md-simonlc.css">
+    
+    <style>
+        .header {  }
+        .sidebar { width: 300px; float: left; }
+        .content { width: calc(100% - 320px); padding-left: 320px; display: block;}
+    </style>
+    
     <script src="js/snuownd.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
     
 var parser = document.createElement('a');
@@ -18,9 +28,45 @@ parser.hash;     // => "#hash"
 parser.host;     // => "example.com:3000"
     
     console.log(parser);
+    
+function sanitize(tname){
+    return tname.substr(2, tname.length - 2).trim();
+}
+
+    $(document).ready(function(){
+        
+        var filename = sanitize(parser.search);
+        if ( filename != '') {
+            $.ajax({
+                method : 'get',
+                url : 'content/'+filename+'.md'
+            })
+            .done(function(md){
+                $('.content').html( SnuOwnd.getParser().render(md) );
+            })
+            .fail(function(){
+                $('.content').html('<h1>Error 404</h1><h2>File Not Found</h2>');
+            });
+        }
+            
+    });
+            
     </script>
 </head>
 <body>
-    <h1>Buku Git</h1>
+    <div class="header">
+    <h1>Buku Git</h1>    
+    </div>
+    
+    
+    <div class="sidebar"><h2>Menu</h2>
+    <ul>
+        <li><a href="?/test-123">Test 123</a></li>
+        <li><a href="?/test-456">Test 456</a></li>
+    </ul>
+    
+    </div>
+    <div class="content"></div>
+    
 </body>
 </html>

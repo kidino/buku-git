@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <title>Buku Git</title>
     <script src="js/snuownd.js"></script>
-    <script src="js/geturl.js"></script>
     <script>
-        console.log(QueryString);
+    
+var parser = document.createElement('a');
+parser.href = window.location.href;
+
+parser.protocol; // => "http:"
+parser.hostname; // => "example.com"
+parser.port;     // => "3000"
+parser.pathname; // => "/pathname/"
+parser.search;   // => "?search=test"
+parser.hash;     // => "#hash"
+parser.host;     // => "example.com:3000"
+    
+    console.log(parser);
     </script>
 </head>
 <body>

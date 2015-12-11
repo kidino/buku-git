@@ -1,0 +1,1 @@
+## Bahagian 1 - Bekerja Sendiri

@@ -369,6 +369,22 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 
+.nav {
+	overflow: hidden;
+	display: block;
+}
+
+.nav .go-front {
+	width: 49%;
+	float: left;
+}
+
+.nav .go-back {
+	width: 49%;
+	float: left;
+	text-align: right;
+}
+
 /* ---- toc ---- */
 
 ul#toc {
@@ -478,69 +494,18 @@ ul#toc > li.expand + li {
     <div id="sidebar">
         <h1>Buku Git</h1>
         <ul id="toc">
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#installation">Installation</a>
-                <ul>
-                    <li><a href="#requirement">Requirements</a></li>
-                    <li><a href="#database">Preparing Database</a></li>
-                    <li><a href="#upload-script">Uploading Your Script</a></li>
-                    <li><a href="#install-wizard">Installation Wizard</a></li>
-                    <li><a href="#delete-install">Delete Install Folder</a></li>
-                    
-                </ul>
-            </li>
-            <li><a href="#admin-login">Admin Login</a></li>
-            <li><a href="#settings">Settings</a>
-                <ul>
-                    <li><a href="#general-settings">General Settings</a></li>
-                    <li><a href="#paypal-settings">Paypal Settings</a></li>
-                    <li><a href="#paypal-api-credentials">How to Get Your Paypal API Credentials</a></li>
-                    <li><a href="#email-settings">Email</a></li>
-                    <li><a href="#email-template-settings">Email Templates</a></li>
-                </ul>
-            </li>
-            <li><a href="#products">Products</a>
-                <ul>
-                    <li><a href="#creating-products">Creating Products</a></li>
-                    <li><a href="#upload-product-files">Uploading Files</a></li>
-                    <li><a href="#product-urls">Product Code &amp; URLs</a></li>
-                    <li><a href="#product-details">Product Details</a></li>
-                    <li><a href="#product-sales-page">Product Sales Page</a></li>
-                    <li><a href="#upload-limit">Increasing PHP File Upload Limit</a></li>
-                </ul>
-            </li>
-            <li><a href="#selling">Selling</a>
-                <ul>
-                    <li><a href="#product-listing">Product Listing</a></li>
-                    <li><a href="#sales-page">Selling with Built-in Salespage</a></li>
-                    <li><a href="#selling-website">Selling with Your Own Website</a></li>
-                </ul>
-            </li>
-            <li><a href="#sales">Managing Sales</a>
-                <ul>
-                    <li><a href="#create-sales">Creating Sales Manually</a></li>
-                    <li><a href="#edit-sale">Editing Existing Sales</a></li>
-                    <li><a href="#extend-expiry">Extending Download Expiry</a></li>
-                </ul>
-            </li>
-            <li><a href="#customers">Managing Customers</a>
-                <ul>
-                    <li><a href="#creating-customers">Creating Customer</a></li>
-                    <li><a href="#edit-customers">Edit Customer</a></li>
-                </ul>
-            </li>
-            <li><a href="#creating-template">Creating Your Own Template</a>
-                <ul>
-                    <li><a href="#variables-listing">Variables for listing.tpl</a></li>
-                    <li><a href="#variables-sales-page">Variables for sales-page.tpl</a></li>
-                    <li><a href="#variables-download">Variables for download.tpl</a></li>
-                </ul>
-            </li>
-            <li><a href="#getting-support">Getting Support</a></li>
         </ul>
     </div>
     <div id="content">
+		<div class="nav">
+			<a href="" class="go-front">&laquo; Ke Depan</a>
+			<a href="" class="go-back">Ke Belakang &raquo;</a>
+		</div>
 		<div id="inner-content">
+		</div>
+		<div class="nav">
+			<a href="" class="go-front">&laquo; Ke Depan</a>
+			<a href="" class="go-back">Ke Belakang &raquo;</a>
 		</div>
 	</div>
 
@@ -572,22 +537,42 @@ function load_link(url){
     var parser = document.createElement('a');
     parser.href = url;
     var filename = sanitize(parser.hash);
-    
+	
+	if (filename == '') { filename = 'pengenalan'; }
+	
+	$('.nav a.go-back').attr('href', $('#sidebar a[href="#!'+filename+'"]').attr('data-next') );
+	$('.nav a.go-front').attr('href', $('#sidebar a[href="#!'+filename+'"]').attr('data-prev') );
+	
     if ( filename != '') {
         load_page(filename);
     } else {
         load_page('pengenalan');
-    }
+    }	
 }
 
 function load_toc(){
+
+	var prevurl = '';
+	var nexturl = '';
+
 	$('ul#toc').html('');
 	for(var i in toc) {
-		$('ul#toc').append('<li><a href="#!'+toc[i].slug+'">'+toc[i].title+'</a></li>');
+	
+		$('ul#toc li').last().find('a').attr('data-next', '#!'+ toc[i].slug);
+		
+		prevurl = $('ul#toc li').last().find('a').attr('href');
+		if ( typeof prevurl === "undefined" ) { prevurl = '#!pengenalan'; }		
+		
+		console.log('top '+i+': '+prevurl);
+		$('ul#toc').append('<li><a href="#!'+toc[i].slug+'" data-prev="'+prevurl+'">'+toc[i].title+'</a></li>');
+		
 		if (toc[i].hasOwnProperty('sub')) {
 			$('ul#toc>li:last-child').append('<ul></ul>');
 			for(var j in toc[i].sub) {
-				$('ul#toc>li:last-child>ul').append('<li><a href="#!'+toc[i].sub[j].slug+'">'+toc[i].sub[j].title+'</a>');
+				$('ul#toc li').last().find('a').attr('data-next','#!'+ toc[i].sub[j].slug);
+				prevurl = $('ul#toc li').last().find('a').attr('href');
+				console.log('sub '+j+': '+prevurl);
+				$('ul#toc>li:last-child>ul').append('<li><a href="#!'+toc[i].sub[j].slug+'" data-prev="'+prevurl+'">'+toc[i].sub[j].title+'</a>');
 			}
 		}
 	}
@@ -598,9 +583,9 @@ function load_toc(){
 		load_toc();
         load_link( window.location.href );
         
-        $('#sidebar').on('click', 'a',function(){ load_link( $(this).attr('href') ); } )
+        $('#sidebar').on('click', 'a',function(){ load_link( $(this).attr('href')  ); } );
+        $('.nav a').on('click', function(){ load_link( $(this).attr('href') ); } );
 		
-    
     $('ul#toc li').each(function(){
         $(this).css( 'height', parseInt( $(this).find('a').css('height') ) + 2 +'px');
     });

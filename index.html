@@ -526,10 +526,18 @@ function load_page(page){
         url : 'content/'+page+'.md'
     })
     .done(function(md){
+        
+        var toc_item = get_toc_item(page);
+        
+        if ((toc_item != false) && ( toc_item.hasOwnProperty('title') )) {
+            document.title = toc_item.title;
+        }
+        
         $('#content #inner-content').html( markdown.toHTML(md) );
     })
     .fail(function(){
-        $('#content #inner-content').html('<h1>Error 404</h1><h2>File Not Found</h2>');
+        document.title = 'Error 404 - Page Not Found';
+        $('#content #inner-content').html('<h1>Error 404</h1><h2>Page Not Found</h2>');
     });
 }
  
@@ -576,6 +584,25 @@ function load_toc(){
 			}
 		}
 	}
+}
+        
+function get_toc_item(slug){
+    for(var i in toc) {
+
+        if (toc[i].slug == slug) {
+            return toc[i];
+        } else {
+            if (toc[i].hasOwnProperty('sub')) {
+                for(var j in toc[i].sub) {
+                    if (toc[i].sub[j].slug == slug) {
+                        return toc[i].sub[j];
+                    }
+                }
+            }
+        }
+    }
+    
+    return false;
 }
                    
     $(document).ready(function(){

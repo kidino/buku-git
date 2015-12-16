@@ -8,7 +8,7 @@ Apa yang anda perlu tahu, Git adalah sebuah alatan untuk kegunaan di *Command Li
 
 Ini adalah skrin hitam (atau hijau) yang mana kita perlu menaip setiap arahan. Terdapat aplikasi klien Git dengan antaramuka yang baik untuk kegunaan di Desktop. Namun untuk Buku Git ini, kita akan lebih mengkhususkan kepada penggunaan di *Command Line* agar anda lebih memahami konsep-konsep penting dalam Git.
 
-[ _TO DO: gambar Command Promt_ ]
+![Image alt](images/git-init-2.png)
 
 Sekiranya konsep-konsep penting ini telah dihadamkan, tidak kira apa aplikasi klien Git yang kita gunakan, kita pasti tahu apa yang perlu dilakukan.
 

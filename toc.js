@@ -24,6 +24,10 @@ var toc = [
         "slug": "git_init_--_memulakan_projek_baru"
       },
       {
+        "title": "Git Status -- Mengetahui situasi semasa dan langkah seterusnya",
+        "slug": "git_status--mengetahui_situasi_semasa_dan_langkah_seterusnya"
+      },
+      {
         "title": "Git Add -- Memilih Fail-fail yang ingin disimpan",
         "slug": "git_add_--_memilih_fail-fail_yang_ingin_disimpan"
       },

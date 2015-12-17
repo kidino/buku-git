@@ -12,3 +12,11 @@ Sekiranya mempunyai kemahiran dan ingin membantu dalam penulisan buku ini, boleh
 
 Lakukan **Fork** dan **Pull Request** di Github untuk menyumbang dari segi penulisan.
 
+### Terima Kasih
+
+Ucapan terima kasih kepada mereka yang telah membantu secara langsung dalam projek ini.
+
+* [Mior Muhammad Zaki](https://github.com/crynobone)
+* [Izwan Wahab](https://github.com/robotys)
+* [Iszuddin Ismail](https://github.com/kidino)
+

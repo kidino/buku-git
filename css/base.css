@@ -1,0 +1,28 @@
+body {
+    padding-top: 70px !important;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    line-height: 1.8em;
+    padding-left: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    line-height: 1.8em;
+    padding-left: 1em;
+}
+
+.sidebar .menu-root {
+    padding-left: 0;
+}
+
+.sidebar .menu-sub {
+    padding-left: 1em;
+    font-size: 0.85em;
+}

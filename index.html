@@ -527,16 +527,14 @@ function load_page(page){
     .done(function(md){
         
         var toc_item = get_toc_item(page);
-        
+        $('#content #inner-content').html( markdown.toHTML(md) );
         if ((toc_item != false) && ( toc_item.hasOwnProperty('title') )) {
             document.title = toc_item.title;
         }
-        
-        $('#content #inner-content').html( markdown.toHTML(md) );
     })
     .fail(function(){
-        document.title = 'Error 404 - Page Not Found';
         $('#content #inner-content').html('<h1>Error 404</h1><h2>Page Not Found</h2>');
+        document.title = 'Error 404 - Page Not Found';
     });
 }
  
@@ -610,7 +608,7 @@ function get_toc_item(slug){
         load_link( window.location.href );
         
         $('#sidebar').on('click', 'a',function(){ load_link( $(this).attr('href')  ); } );
-        $('.nav a').on('click', function(){ load_link( $(this).attr('href') ); } );
+        $('.nav').on('click', 'a', function(){ load_link( $(this).attr('href') ); } );
 		
     $('ul#toc li').each(function(){
         $(this).css( 'height', parseInt( $(this).find('a').css('height') ) + 2 +'px');

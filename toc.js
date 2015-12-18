@@ -32,8 +32,8 @@ var toc = [
         "slug": "git_add_--_memilih_fail-fail_yang_ingin_disimpan"
       },
       {
-        "title": "Git Ignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan",
-        "slug": "git_ignore_--_memaklumkan_pada_git_fail-fail_yang_perlu_diabaikan"
+        "title": "gitignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan",
+        "slug": "gitignore_--_memaklumkan_pada_git_fail-fail_yang_perlu_diabaikan"
       },
       {
         "title": "Git Commit -- Menyimpan Kerja",

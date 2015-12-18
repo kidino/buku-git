@@ -2,7 +2,7 @@
 
 ## Git Tag -- Menandakan Hasil Kerja
 
-Bila kita dah banyak membuat penambahan/perbaharuan dalam perisian yang dibangunkan, kita perlu menandakan titik perlepasan (`release point`).
+Menggunakan ```git checkout``` atau apa-apa arahan lain untuk merujuk semula ke titik kerja yang lalu agak rumit kita kita bergantung kepada commit ID. Jadi, kita boleh penandakan sesuatu commit dengan ```tag```. Bila kita dah banyak membuat penambahan/perbaharuan dalam perisian yang dibangunkan, kita boleh menandakan titik perlepasan (`release point`).
 
 Untuk menyenarai `tag`, kita boleh menggunakan command `git tag`, seperti berikut:
 
@@ -13,16 +13,6 @@ v1.0
 ```
 
 Sekiranya kita, tidak pernah membuat `tag`, tidak ada sebarang `tag` akan dipaparkan.
-
-#### Membuat `tag`
-
-```bash
-$ git tag v1.1-beta
-$ git tag
-v0.5
-v1.0
-v1.1-beta
-```
 
 Untuk melihat terperinci tentang `tag` yang dibuat, boleh taip:
 
@@ -35,62 +25,59 @@ Date:   Mon Dec 18 21:52:11 2008 +0800
   changed the version number
 ```
 
-#### Membuat `tag` kemudian
+### Membuat `tag` Baru
 
-Anda juga boleh membuat `tag` untuk kerja-kerja yang lepas, contohnya ada mempunyai `commit` seperti dibawah:
+Anda juga boleh membuat `tag` untuk kerja-kerja yang lepas, contohnya ada mempunyai `commit` seperti dibawah (`git log` menyenaraikan commit):
 
 ```bash
-Wed Dec 16 11:49:53 2015 +0800 d2a5622 material-sorting  [Nurulazrad M]
-Mon Dec 14 17:24:13 2015 +0800 b2b550f fix-i18n-materials  [Nurulazrad M]
-Wed Dec 16 10:15:54 2015 +0800 5c72690 fix-article-naming  [Nurulazrad M]
-Mon Dec 14 14:25:16 2015 +0800 d5fe731 new-material-indicator  [Nurulazrad M]
+$ git log --pretty=oneline
+
+commit c7e170a4b3f820e91674696c55d146d443a5f023
+Author: Iszuddin Ismail <dino@websegera.my>
+Date:   Sat Dec 19 07:07:51 2015 +0800
+
+    minor standardization
+
+    Signed-off-by: Iszuddin Ismail <dino@websegera.my>
+
+commit d7f356330b00414da298959c0ddf54fcc7e0b370
+Merge: 7167656 ae98e57
+Author: Iszuddin Ismail <dino@websegera.my>
+Date:   Sat Dec 19 06:50:03 2015 +0800
+
+    Merge pull request #6 from hasyimibhar/pasang-osx
+
+    Tambah maklumat tentang pemasangan git untuk Mac OS X
 ```
 
-Katakan, kita hendak menandakan `fix` dalam perisian kita, contoh pada `commit b2b550f fix-i18n-materials`
+Katakan, kita hendak menandakan `v0.6` dalam projek kita pada `commit c7e170a4` _(hanya gunakan 8 aksara pertama dari commit ID)_.
 
 ```bash
-$ git tag -a v0.6 b2b550f
+$ git tag -a v0.6 commit c7e170a4
 ```
 
 Dan untuk melihat, taip `git show v0.6`
 
 ```bash
-commit b2b550fd003fe3a1f7357d2e303088ef6c8d2085
-Author: Nurulazrad Murad <nurulazradm@herbalife.com>
-Date:   Mon Dec 14 17:24:13 2015 +0800
+commit c7e170a4b3f820e91674696c55d146d443a5f023
+Author: Iszuddin Ismail <dino@websegera.my>
+Date:   Sat Dec 19 07:07:51 2015 +0800
 
-  fix i18n materials
+    minor standardization
+
+    Signed-off-by: Iszuddin Ismail <dino@websegera.my>
 ```
 
-#### Kongsi `tag`
-
-Untuk membolehkan pengguna lain melihat `tag` yang telah dibuat, pengguna perlu menaip `git push origin v0.6`
+Untuk memastikan lagi, kita boleh guna semula arahan `git tag`.
 
 ```bash
-Counting objects: 14, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (12/12), done.
-Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
-Total 14 (delta 3), reused 0 (delta 0)
-To git@github.com:nurulazradm/buku-git.git
-* [new tag] v0.6 -> v0.6
+$ git tag
+v0.5
+v1.0
+v0.6
 ```
 
-Atau untuk mengongsi kesemua `tag` yang telah dibuat, sila taip `git push origin --tags`
-
-```bash
-Counting objects: 14, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (12/12), done.
-Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
-Total 14 (delta 4), reused 0 (delta 0)
-To git@github.com:nurulazradm/buku-git.git
-* [new tag] v0.7 -> v0.7
-* [new tag] v1.0 -> v1.0
-```
-
-
-#### `Checkout Tag`
+### Checkout Tag
 
 Untuk berkerja pada `tag` yang tertentu, sila taip:
 
@@ -98,3 +85,6 @@ Untuk berkerja pada `tag` yang tertentu, sila taip:
 $ git checkout -b version1 v1.0
 Switched to a new branch 'version1'
 ```
+
+Di sini, kita mengambil kerja-kerja dari tag `v1.0` dan disalinkan ke _branch_ baru, *version1*. Kita akan bincangkan tentang *Branching* dengan lebih lanjut di bab yang lain.
+

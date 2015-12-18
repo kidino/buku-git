@@ -12,7 +12,7 @@ Fail-fail `gitignore`:
 
 Setiap baris di dalam fail `gitignore` adalah corak yang akan dipadankan oleh Git untuk tujuan pengabaian. Git lazimya memeriksa corak daripada beberapa sumber, mengikut turutan yang paling penting dahulu:
 
-1. Corak daripada garis perintah (contohnya daipada `git ls-files` and `git read-tree`)
+1. Corak daripada garis perintah (contohnya daripada `git ls-files` and `git read-tree`)
 
 1. Corak daripada fail `.gitignore` di dalam direktori semasa ataupun direktori di atasnya
 

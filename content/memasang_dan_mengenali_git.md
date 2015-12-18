@@ -18,7 +18,35 @@ Pertama sekali, kita perlu memuat-turun aplikasi untuk memasang Git ke Windows. 
 
 http://git-scm.com/download/win
 
-** Memasang Git untuk Mac OS **
+** Memasang Git untuk Mac OS X **
+
+Terdapat dua cara mudah untuk memasang Git untuk Mac OS X: menggunakan `brew` (http://brew.sh) atau `xcode-select`.
+
+#### Cara 1: Menggunakan `brew`
+
+1. Pasang `brew` terlebih dahulu:
+
+    ```sh
+    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+
+2. Kemudian pasang `git`:
+
+    ```sh
+    $ brew install git
+    ```
+
+> `brew` merupakan alatan yang seringkali diguna pakai untuk memasang alatan dan perisian untuk OS X.
+
+#### Cara 2: Menggunakan `xcode-select`
+
+Ini merupakan cara yang lebih rasmi untuk memasang `git` untuk Mac OS X:
+
+```sh
+$ xcode-select --install
+```
+
+> Command di atas bukan sahaja memasang `git`, malah memasang alatan-alatan lain seperti `gcc` dan `clang`.
 
 ** Memasang Git untuk Linux **
 

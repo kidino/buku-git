@@ -12,13 +12,15 @@ Ini adalah skrin hitam (atau hijau) yang mana kita perlu menaip setiap arahan. T
 
 Sekiranya konsep-konsep penting ini telah dihadamkan, tidak kira apa aplikasi klien Git yang kita gunakan, kita pasti tahu apa yang perlu dilakukan.
 
-** Memasang Git untuk Windows **
+### Memasang Git untuk Windows
 
 Pertama sekali, kita perlu memuat-turun aplikasi untuk memasang Git ke Windows. Dapatkan Git untuk dipasang ke komputer dari laman web berikut:
 
 http://git-scm.com/download/win
 
-** Memasang Git untuk Mac OS X **
+_[ perlukan langkah-langkah lanjutan ]_
+
+### Memasang Git untuk Mac OS X
 
 Terdapat dua cara mudah untuk memasang Git untuk Mac OS X: menggunakan `brew` (http://brew.sh) atau `xcode-select`.
 
@@ -48,5 +50,5 @@ $ xcode-select --install
 
 > Command di atas bukan sahaja memasang `git`, malah memasang alatan-alatan lain seperti `gcc` dan `clang`.
 
-** Memasang Git untuk Linux **
+### Memasang Git untuk Linux
 

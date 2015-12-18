@@ -40,12 +40,12 @@ var toc = [
         "slug": "git_commit_--_menyimpan_kerja"
       },
       {
-        "title": "Git Tag -- Menandakan Hasil Kerja",
-        "slug": "git_tag_--_menandakan_hasil_kerja"
-      },
-      {
         "title": "Git Checkout -- Melihat Kerja-kerja Lampau",
         "slug": "git_checkout_--_melihat_kerja-kerja_lampau"
+      },
+      {
+        "title": "Git Tag -- Menandakan Hasil Kerja",
+        "slug": "git_tag_--_menandakan_hasil_kerja"
       },
       {
         "title": "Git Revert -- Buang dan Ulang Semula",

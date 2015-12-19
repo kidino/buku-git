@@ -25,6 +25,17 @@ code {
     margin-bottom: 50pt;
 }
 
+.content h2 {
+    font-size: 14pt;
+    line-height: 22pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 40pt;
+    margin-bottom: 10pt;
+}
+
 .content p {
     font-size: 14pt;
     line-height: 22pt;

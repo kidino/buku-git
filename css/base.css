@@ -14,6 +14,13 @@ code {
     padding: 0;
 }
 
+.content p {
+    font-size: 14pt;
+    line-height: 22pt;
+    margin-top: 0;
+    margin-bottom: 20pt;
+}
+
 .sidebar ul {
     list-style-type: none;
     margin: 0;

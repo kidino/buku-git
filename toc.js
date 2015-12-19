@@ -40,6 +40,10 @@ var toc = [
         "slug": "git_commit_--_menyimpan_kerja"
       },
       {
+        "title": "Git Log -- Melihat sejarah kerja",
+        "slug": "git_log_--_melihat_sejarah_kerja"
+      },
+      {
         "title": "Git Checkout -- Melihat Kerja-kerja Lampau",
         "slug": "git_checkout_--_melihat_kerja-kerja_lampau"
       },

@@ -4,6 +4,12 @@ body {
     font-size: 15px;
 }
 
+.content {
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar ul {
     list-style-type: none;
     margin: 0;

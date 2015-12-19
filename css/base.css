@@ -1,7 +1,11 @@
 body {
     padding-top: 70px !important;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 15px;
+}
+
+code {
+    font-family: 'Source Code Pro';
 }
 
 .content {

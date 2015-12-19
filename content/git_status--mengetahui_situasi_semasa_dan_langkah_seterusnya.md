@@ -2,10 +2,6 @@
 
 ## Git Status -- Mengetahui situasi semasa dan langkah seterusnya
 
-#### Bahagian 1 - Bekerja Sendiri
-
-## Git Init -- Memulakan Projek Baru
-
 Setelah memastikan projek kita kini sudah menggunakan Git untuk mengenalpasti sebarang perubahan dalam kod, langkah seterusnya adalah untuk memastikan status terkini projek kita.
 
 Sebarang perubahan yang kita lakukan pada fail-fail didalam projek ini (jika ada), akan dipaparkan menggunakan arahan ini.

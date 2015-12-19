@@ -1,6 +1,6 @@
 #### Bahagian 2 - Bekerja dengan Server Repository (seperti Github, Gitlab, Bitbucket)
 
-## Forking
+# Forking
 
 Forking, atau Fork fungsinya adalah untuk mengasingkan codebase asal daripada codebase pengguna lain. Mengapa mahu begitu? Khusus untuk memudahkan tuan punya codebase asal menjaga 'keaslian' codebase asal tersebut.
 

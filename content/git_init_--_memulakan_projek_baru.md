@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Git Init -- Memulakan Projek Baru
+# Git Init -- Memulakan Projek Baru
 
 Perkara pertama yang kita buat apabila menggunakan Git adalah memberikan arahan ```git init```.
 

@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Kehidupan Seorang Programmer Tanpa Git
+# Kehidupan Seorang Programmer Tanpa Git
 
 Sebelum kita terus kepada Git, saya rasa anda akan lebih faham kegunaan Git apabila kita mengimbau kembali apa yang kita biasa buat untuk menyimpan hasil-hasil kerja kita dalam pembangunan.
 

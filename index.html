@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projek Buku Git</title>
 
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Buku Git</a>
-            </div>
-        </div>
-    </nav>
-
     <div class="container-fluid">
+       <div class="row top-title">
+           <div class="col-md-12"><h1>Projek Buku Git</h1></div>
+       </div>
+       
+       <div class="row">
+           
         <div class="sidebar col-md-3">
             <ul class="menu-root">
                 <li v-for="entry in toc">
@@ -33,7 +31,8 @@
                 </li>
             </ul>
         </div>
-        <div class="content col-md-9">
+        <div class="col-md-9">
+           <div class="content">
             <nav>
                 <ul class="pager">
                     <li class="previous"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
@@ -53,6 +52,8 @@
                     <li class="next"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
+        </div>
+        </div>
         </div>
     </div>
 

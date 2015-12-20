@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Git Tag -- Menandakan Hasil Kerja
+# Git Tag -- Menandakan Hasil Kerja
 
 Menggunakan ```git checkout``` atau apa-apa arahan lain untuk merujuk semula ke titik kerja yang lalu agak rumit kita kita bergantung kepada commit ID. Jadi, kita boleh penandakan sesuatu commit dengan ```tag```. Bila kita dah banyak membuat penambahan/perbaharuan dalam perisian yang dibangunkan, kita boleh menandakan titik perlepasan (`release point`).
 
@@ -73,8 +73,8 @@ Untuk memastikan lagi, kita boleh guna semula arahan `git tag`.
 ```bash
 $ git tag
 v0.5
-v1.0
 v0.6
+v1.0
 ```
 
 ### Checkout Tag
@@ -87,4 +87,3 @@ Switched to a new branch 'version1'
 ```
 
 Di sini, kita mengambil kerja-kerja dari tag `v1.0` dan disalinkan ke _branch_ baru, *version1*. Kita akan bincangkan tentang *Branching* dengan lebih lanjut di bab yang lain.
-

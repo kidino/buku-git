@@ -4,6 +4,24 @@ body {
     font-size: 15px;
 }
 
+.content code {
+    font-size: 10pt;
+}
+
+.content code .code-output {
+    color: #999999;
+}
+
+.content code .code-dollar {
+    display: inline-block;
+    margin-right: 10px;
+    color: #009900;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
 .sidebar ul {
     list-style-type: none;
     margin: 0;

@@ -41,7 +41,7 @@
                 </ul>
             </nav>
 
-            <div v-if="content != null">{{{ content | marked }}}</div>
+            <div v-if="content != null">{{{ content | marked | shellScript }}}</div>
             <div v-else class="jumbotron">
                 <h1>Error 404</h1>
                 <p>Page Not Found</p>
@@ -58,6 +58,7 @@
 
     <!-- script src="lib/markdown.js"></script -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/shell.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
@@ -110,7 +111,8 @@
     var vue = new Vue({
         el: 'body',
         filters: {
-            marked: marked
+            marked: marked,
+            shellScript: shellScript
         },
         data: {
             glossary: glossary,

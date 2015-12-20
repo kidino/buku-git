@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Memasang dan Mengenali Git
+# Memasang dan Mengenali Git
 
 ** Git Sebuah Alatan *Command Line* **
 

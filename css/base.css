@@ -1,7 +1,83 @@
 body {
     padding-top: 70px !important;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 15px;
+}
+
+code {
+    font-family: 'Source Code Pro';
+}
+
+.content {
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+}
+
+.content h1 {
+    font-size: 28pt;
+    line-height: 36pt;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    border-top: 1px solid #999999;
+    padding-top: 5pt;
+    padding-bottom: 0;
+    margin-bottom: 50pt;
+}
+
+.content h2 {
+    font-size: 14pt;
+    line-height: 22pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    padding: 0;
+    padding-bottom: 5pt;
+    margin-top: 40pt;
+    margin-bottom: 10pt;
+    border-bottom: 1px solid #dddddd;
+}
+
+.content h3 {
+    font-size: 14pt;
+    line-height: 22pt;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 30pt;
+    margin-bottom: 10pt;
+}
+
+.content p {
+    font-size: 14pt;
+    line-height: 22pt;
+    margin-top: 0;
+    margin-bottom: 20pt;
+}
+
+.content ul,
+.content ol {
+    margin-bottom: 20pt;
+}
+
+.content ul li,
+.content ol li {
+    font-size: 14pt;
+    line-height: 22pt;
+}
+
+.content code {
+    color: #333333;
+    font-size: 14pt;
+    background-color: transparent;
+}
+
+.content pre {
+    margin-bottom: 20pt;
+}
+
+.content pre code {
+    font-size: 10pt;
 }
 
 .sidebar ul {

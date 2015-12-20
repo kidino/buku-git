@@ -1,4 +1,4 @@
-## Bahagian 1 - Bekerja Sendiri
+# Bahagian 1 - Bekerja Sendiri
 
 Git boleh digunakan bersama-sama dan beramai-ramai. Ini perlu apabila kita ingin menggabungkan kerja-kerja yang dibangunkan berasingan. Tetapi sebelum itu, kita perlulah tahu cara menggunakan Git secara berseorangan.
 

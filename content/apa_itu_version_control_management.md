@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Apa itu Version Control Management
+# Apa itu Version Control Management
 
 Dalam kerja-kerja programming, kita banyak membuat ubahsuai kepada kerja-kerja, mencuba-daya kaedah dan ciri baru untuk sistem yang dibangunkan, menghasilkan versi baru untuk aplikasi dan sebagainya. Dan pada masa yang sama, kita mahu menjaga source code yang telah siap agar tidak rosak dengan cuba-daya kita yang baru itu. Tetapi sekiranya pembangunan yang baru ini berhasil, ia perlu digabungkan kepada sistem utama dan dikeluarkan sebagai versi baru.
 

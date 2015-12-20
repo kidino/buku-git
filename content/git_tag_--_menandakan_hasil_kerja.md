@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Git Tag -- Menandakan Hasil Kerja
+# Git Tag -- Menandakan Hasil Kerja
 
 Menggunakan ```git checkout``` atau apa-apa arahan lain untuk merujuk semula ke titik kerja yang lalu agak rumit kita kita bergantung kepada commit ID. Jadi, kita boleh penandakan sesuatu commit dengan ```tag```. Bila kita dah banyak membuat penambahan/perbaharuan dalam perisian yang dibangunkan, kita boleh menandakan titik perlepasan (`release point`).
 

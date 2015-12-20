@@ -61,6 +61,16 @@ code {
     line-height: 22pt;
 }
 
+.content code {
+    color: #333333;
+    font-size: 14pt;
+    background-color: transparent;
+}
+
+.content pre code {
+    font-size: 10pt;
+}
+
 .sidebar ul {
     list-style-type: none;
     margin: 0;

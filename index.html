@@ -12,7 +12,13 @@
     <link href="css/base.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
+       <div class="row top-title">
+           <div class="col-md-12"><h1>Projek Buku Git</h1></div>
+       </div>
+       
+       <div class="row">
+           
         <div class="sidebar col-md-3">
             <ul class="menu-root">
                 <li v-for="entry in toc">
@@ -25,7 +31,8 @@
                 </li>
             </ul>
         </div>
-        <div class="content col-md-9">
+        <div class="col-md-9">
+           <div class="content">
             <nav>
                 <ul class="pager">
                     <li class="previous"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
@@ -45,6 +52,8 @@
                     <li class="next"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
+        </div>
+        </div>
         </div>
     </div>
 

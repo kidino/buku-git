@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## gitignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan
+# gitignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan
 
 Kadangkala kita perlu mengabaikan fail ataupun direktori, contohnya fail sementara ataupun konfigurasi yang dijana oleh program penyunting teks ataupun Persekitaran Pembangunan (IDE). Ini adalah kerana bukan semua orang menggunakan program yang sama untuk menulis kod.
 

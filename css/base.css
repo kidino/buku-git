@@ -1,5 +1,4 @@
 body {
-    padding-top: 70px !important;
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
 }
@@ -8,9 +7,12 @@ code {
     font-family: 'Source Code Pro';
 }
 
+.top-title {
+    background-color: #f0f0f0;
+}
 .content {
     max-width: 700px;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -78,6 +80,10 @@ code {
 
 .content pre code {
     font-size: 10pt;
+}
+
+.sidebar {
+    padding-top: 30px;
 }
 
 .sidebar ul {

@@ -1,8 +1,8 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Memasang dan Mengenali Git
+# Memasang dan Mengenali Git
 
-** Git Sebuah Alatan *Command Line* **
+## Git Sebuah Alatan *Command Line*
 
 Apa yang anda perlu tahu, Git adalah sebuah alatan untuk kegunaan di *Command Line*, ataupun *Terminal*. Kalau dalam Windows mungkin kita panggil *Command Prompt*.
 
@@ -12,7 +12,7 @@ Ini adalah skrin hitam (atau hijau) yang mana kita perlu menaip setiap arahan. T
 
 Sekiranya konsep-konsep penting ini telah dihadamkan, tidak kira apa aplikasi klien Git yang kita gunakan, kita pasti tahu apa yang perlu dilakukan.
 
-### Memasang Git untuk Windows
+## Memasang Git untuk Windows
 
 Pertama sekali, kita perlu memuat-turun aplikasi untuk memasang Git ke Windows. Dapatkan Git untuk dipasang ke komputer dari laman web berikut:
 
@@ -20,11 +20,11 @@ http://git-scm.com/download/win
 
 _[ perlukan langkah-langkah lanjutan ]_
 
-### Memasang Git untuk Mac OS X
+## Memasang Git untuk Mac OS X
 
 Terdapat dua cara mudah untuk memasang Git untuk Mac OS X: menggunakan `brew` (http://brew.sh) atau `xcode-select`.
 
-#### Cara 1: Menggunakan `brew`
+### Cara 1: Menggunakan `brew`
 
 1. Pasang `brew` terlebih dahulu:
 
@@ -40,7 +40,7 @@ Terdapat dua cara mudah untuk memasang Git untuk Mac OS X: menggunakan `brew` (h
 
 > `brew` merupakan alatan yang seringkali diguna pakai untuk memasang alatan dan perisian untuk OS X.
 
-#### Cara 2: Menggunakan `xcode-select`
+### Cara 2: Menggunakan `xcode-select`
 
 Ini merupakan cara yang lebih rasmi untuk memasang `git` untuk Mac OS X:
 

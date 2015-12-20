@@ -32,8 +32,10 @@ code {
     letter-spacing: 1pt;
     font-weight: 700;
     padding: 0;
+    padding-bottom: 5pt;
     margin-top: 40pt;
     margin-bottom: 10pt;
+    border-bottom: 1px solid #dddddd;
 }
 
 .content p {

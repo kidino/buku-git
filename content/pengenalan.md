@@ -17,4 +17,9 @@ Ucapan terima kasih kepada mereka yang telah membantu secara langsung dalam proj
 * [Mior Muhammad Zaki](https://github.com/crynobone)
 * [Izwan Wahab](https://github.com/robotys)
 * [Iszuddin Ismail](https://github.com/kidino)
+* [Nurulazrad](https://github.com/nurulazradm)
+* [Anasceym](https://github.com/anasceym)
+* [Adyromantika](https://github.com/adyromantika)
+* [Hasyimibhar](https://github.com/hasyimibhar)
+
 

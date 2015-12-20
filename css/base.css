@@ -38,6 +38,16 @@ code {
     border-bottom: 1px solid #dddddd;
 }
 
+.content h3 {
+    font-size: 14pt;
+    line-height: 22pt;
+    letter-spacing: 1pt;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 30pt;
+    margin-bottom: 10pt;
+}
+
 .content p {
     font-size: 14pt;
     line-height: 22pt;

@@ -55,6 +55,11 @@ code {
     margin-bottom: 20pt;
 }
 
+.content ul,
+.content ol {
+    margin-bottom: 20pt;
+}
+
 .content ul li,
 .content ol li {
     font-size: 14pt;

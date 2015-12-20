@@ -43,7 +43,8 @@ code {
     margin-bottom: 20pt;
 }
 
-.content ul li {
+.content ul li,
+.content ol li {
     font-size: 14pt;
     line-height: 22pt;
 }

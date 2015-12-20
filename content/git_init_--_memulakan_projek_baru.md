@@ -10,7 +10,7 @@ Dalam buku ini, kita akan membina sebuah projek contoh. Di sini kita akan membin
 
     ```sh
     $ mkdir PROJEK-GIT
-    $ cd PROJEK-GIT     # Masuk ke dalam folder tersebut
+    $ cd PROJEK-GIT
     ```
 
 2. Mulakan projek Git baru di dalam folder tersebut dengan `git init`:

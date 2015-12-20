@@ -14,11 +14,18 @@ Sekiranya konsep-konsep penting ini telah dihadamkan, tidak kira apa aplikasi kl
 
 ## Memasang Git untuk Windows
 
-Pertama sekali, kita perlu memuat-turun aplikasi untuk memasang Git ke Windows. Dapatkan Git untuk dipasang ke komputer dari laman web berikut:
+1. Muat turun pemasang Git untuk Windows dari laman web Git: http://git-scm.com/download/win
+2. Jalankan pemasang Git tersebut, dan klik *Next* sehingga pemasangan Git tamat.
+3. Terminal Git boleh diakses dengan menjalankan aplikasi *Git Bash*:
 
-http://git-scm.com/download/win
+    ![Image alt](images/git-bash-icon.png)
 
-_[ perlukan langkah-langkah lanjutan ]_
+4. Jalankan arahan `git --version` untuk mencuba Git. Anda akan dapat melihat version Git yang telah dipasang:
+
+    ```sh
+    $ git --version
+    git version 2.6.4.windows.1
+    ```
 
 ## Memasang Git untuk Mac OS X
 

@@ -55,3 +55,28 @@ $ xcode-select --install
 
 ### Memasang Git untuk Linux
 
+Terdapat 2 cara untuk memasang Git di GNU/Linux: pengurus pakej dan kompil ***(compile)*** kod sumber.
+
+#### Cara 1: Pengurus Pakej
+
+Git biasanya boleh didapati di kebanyakan pengurus pakej ***(package manager)*** distro Linux. Berikut langkah untuk memasang Git di Fedora 23:
+
+Pastikan anda mengemaskini sistem terlebih dahulu:
+
+```sh
+$ sudo dnf update
+```
+
+Seterusnya, jalankan arahan untuk memasang Git:
+
+```sh
+$ sudo dnf install git-all
+```
+
+Dengan itu Git telah dipasang ke dalam sistem. Untuk mengetahui versi yang dipasang, jalankan arahan berikut:
+
+```sh
+$ git --version
+```
+
+#### Cara 2: Kompil Kod Sumber

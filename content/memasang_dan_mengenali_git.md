@@ -68,6 +68,7 @@ $ xcode-select --install
     ```sh
     $ sudo apt-get install git-all
     ```
+    
 > `apt` merupakan alatan bagi menguruskan pakej pada OS Linux yang berasaskan debian seperti Ubuntu dan LinuxMint.
 
 ### Cara 2: Menggunakan `yum`

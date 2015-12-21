@@ -70,6 +70,10 @@ var toc = [
       {
         "title": "Git GUI -- Menyemak Sejarah dan Peta Kerja-kerja",
         "slug": "git_gui_--_menyemak_sejarah_dan_peta_kerja-kerja"
+      },
+      {
+        "title": "Penutup Bahagian 1",
+        "slug": "bahagian_1_-_penutup"
       }
     ]
   },

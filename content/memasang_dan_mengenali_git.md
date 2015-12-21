@@ -55,3 +55,32 @@ $ xcode-select --install
 
 ### Memasang Git untuk Linux
 
+### Cara 1: Menggunakan `apt-get`
+
+1. Kemaskini pakej `apt` terlebih dahulu:
+
+    ```sh
+    $ sudo apt-get update
+    ```
+
+2. Kemudian pasang `git`:
+
+    ```sh
+    $ sudo apt-get install git-all
+    ```
+> `apt` merupakan alatan bagi menguruskan pakej pada OS Linux yang berasaskan debian seperti Ubuntu dan LinuxMint.
+
+### Cara 2: Menggunakan `yum`
+
+1. Kemaskini pakej `yum` terlebih dahulu:
+
+    ```sh
+    $ sudo yum update
+    ```
+
+2. Kemudian pasang `git`:
+
+    ```sh
+    $ sudo yum install git-all
+    ```
+> `yum` merupakan alatan bagi menguruskan pakej rpm pada OS Linux yang berasaskan redhat seperti Fedora dan CentOS.

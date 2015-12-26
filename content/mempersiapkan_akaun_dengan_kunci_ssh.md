@@ -12,23 +12,34 @@ Buka *Terminal* dan masukkan arahan berikut:
 $ ssh-keygen -t rsa -b 4096 -C "emel.anda@domain.tld"
 ```
 
-```sh
+```
 Enter file in which to save the key (Users/anda/.ssh/id_rsa)
 ```
 
 Masukkan frasa laluan anda
 
-```sh
+```
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again:
 ```
 
-
-```sh
+```
 Your identification has been saved in /Users/anda/.ssh/id_rsa
 Your public key has been saved in /Users/anda/.ssh/id_rsa.pub
 The key fingerprint is:
- emel.anda@domain.tld
+28:56:05:40:d6:ad:41:d7:72:f9:05:5a:0c:84:c0:86 emel.anda@domain.tld
+The key's randomart image is:
++--[ RSA 2048]----+
+|   .+*++o+o+o.   |
+|   .E =o+ +o. .  |
+|     ..o o.. .   |
+|     ...    .    |
+|    o . S        |
+|   . .           |
+|                 |
+|                 |
+|                 |
++-----------------+ 
 ```
 
 2. Tambah Kunci ke ssh-agent
@@ -46,8 +57,4 @@ $ ssh-add ~/.ssh/id_rsa
 
 Log masuk ke github.com. Klik pada imej anda di sebelah kanan atas, dan pergi ke *Settings*. Seterusnya, pada menu sebelah kiri pergi ke *SSH Keys*. Tekan butang *Add SSH Key*.
 
-Anda boleh menamakan kunci anda dengan sebarang nama yang berkaitan, seperti "Laptop Kerja" atau " Sdn. Bhd.". 
-
-
-
-
+Anda boleh menamakan kunci anda dengan sebarang nama yang berkaitan, seperti "Laptop Kerja" atau "Syarikat Sistem Sdn. Bhd.".

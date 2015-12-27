@@ -6,7 +6,7 @@
 
 ### OS X & Linux
 
-> Cara menjana kunci SSH pada kedua-dua sistem pengoperasian adalah sama dengan terdapat sedikit perbezaan minor.
+> Cara menjana kunci SSH pada kedua-dua sistem pengoperasian adalah sama dengan terdapat sedikit perbezaan kecil.
 
 1. Jana Kunci SSH
 
@@ -16,11 +16,13 @@
    $ ssh-keygen -t rsa -b 4096 -C "emel.anda@domain.tld"
    ```
 
+   Seterusnya, tentukan di mana kunci akan disimpan. Sebaiknya kekalkan pada lokasi yang telah dipilih oleh sistem.
+   
    ```
    Enter file in which to save the key (Users/anda/.ssh/id_rsa)
    ```
 
-   Masukkan frasa laluan anda:
+   Rekakan frasa laluan anda.
 
    ```
    Enter passphrase (empty for no passphrase): 
@@ -46,33 +48,35 @@
    +-----------------+ 
    ```
 
-2. Tambah kunci ke ssh-agent
-
+2. Tambah kunci ke ```ssh-agent```
+   
+   Pastikan ```ssh-agent``` berjalan di latar belakang.
+   
    ```sh
    $ eval "$(ssh-agent -s)"
 
-   ```
-
+   ``` 
+   
    ```sh
    $ ssh-add ~/.ssh/id_rsa
    ```
 
 3. Salin kunci ke papan keratan *(clipboard)*
 
-  * OS X: Gunakan ```pbcopy```:
+  * **OS X**: Gunakan ```pbcopy```:
 
     ```sh
     $ pbcopy < ~/.ssh/id_rsa.pub 
     ```
 
-  * Linux: Gunakan ```xclip```. Pasang ke dalam sistem terlebih dahulu (sekiranya tiada) menggunakan pengurus pakej OS yang anda gunakan sama ada ```apt-get```, ```yum```, atau ```dnf```:
+  * **Linux**: Gunakan ```xclip```. Pasang ke dalam sistem terlebih dahulu (sekiranya tiada) menggunakan pengurus pakej OS yang anda gunakan sama ada ```apt-get```, ```yum```, atau ```dnf```:
 
     ```sh
      $ sudo dnf install xclip
      $ xclip -sel clip < ~/.ssh/id_rsa.pub
     ```
 
-3. Menambah Kunci ke GitHub
+4. Menambah Kunci ke GitHub
 
    Log masuk ke github.com. Klik pada imej anda di sebelah kanan atas, dan pergi ke *Settings*. Seterusnya, pada menu sebelah kiri pergi ke *SSH Keys*. Tekan butang *Add SSH Key*.
 

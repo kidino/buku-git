@@ -2,7 +2,11 @@
 
 ## Mempersiapkan Akaun dengan Kunci SSH
 
-####Linux
+### Windows
+
+#### OS X & Linux
+
+> Cara menjana kunci SSH pada kedua-dua sistem pengoperasian adalah sama dengan terdapat sedikit perbezaan minor.
 
 1. Jana Kunci SSH
 
@@ -42,7 +46,7 @@ The key's randomart image is:
 +-----------------+ 
 ```
 
-2. Tambah Kunci ke ssh-agent
+2. Tambah kunci ke ssh-agent
 
 ```sh
 $ eval "$(ssh-agent -s)"
@@ -52,6 +56,24 @@ $ eval "$(ssh-agent -s)"
 ```sh
 $ ssh-add ~/.ssh/id_rsa
 ```
+3. Salin kunci ke papan keratan *(clipboard)*
+
+  * OS X
+   
+   Gunakan ```pbcopy```:
+
+    ```sh
+    $ pbcopy < ~/.ssh/id_rsa.pub 
+    ```
+
+  * Linux
+   
+   Gunakan ```xclip```. Pasang ke dalam sistem terlebih dahulu (sekiranya tiada) menggunakan pengurus pakej OS yang anda gunakan sama ada ```apt-get```, ```yum```, atau ```dnf```:
+
+    ```sh
+     $ sudo dnf install xclip
+     $ xclip -sel clip < ~/.ssh/id_rsa.pub
+    ```
 
 3. Menambah Kunci ke GitHub
 

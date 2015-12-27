@@ -59,15 +59,13 @@
 
 3. Salin kunci ke papan keratan *(clipboard)*
 
-  * OS X
-    Gunakan ```pbcopy```:
+  * OS X: Gunakan ```pbcopy```:
 
     ```sh
     $ pbcopy < ~/.ssh/id_rsa.pub 
     ```
 
-  * Linux
-    Gunakan ```xclip```. Pasang ke dalam sistem terlebih dahulu (sekiranya tiada) menggunakan pengurus pakej OS yang anda gunakan sama ada ```apt-get```, ```yum```, atau ```dnf```:
+  * Linux: Gunakan ```xclip```. Pasang ke dalam sistem terlebih dahulu (sekiranya tiada) menggunakan pengurus pakej OS yang anda gunakan sama ada ```apt-get```, ```yum```, atau ```dnf```:
 
     ```sh
      $ sudo dnf install xclip

@@ -16,12 +16,12 @@
        <div class="row top-title">
            <div class="col-md-12"><h1>Projek Buku Git</h1></div>
        </div>
-       
+
        <div class="row">
-           
+
         <div class="sidebar col-md-3">
             <ul class="menu-root">
-                <li v-for="entry in toc">
+                <li v-for="entry in toc" v-cloak>
                     <a href="#" @click="openPage(entry.slug)">{{ entry.title }}</a>
                     <ul class="menu-sub" v-if="entry.sub && entry.sub.length > 0">
                         <li v-for="sub in entry.sub" :class="{ 'hidden': isNotActiveMenu(entry) }">
@@ -35,21 +35,21 @@
            <div class="content">
             <nav>
                 <ul class="pager">
-                    <li class="previous"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
-                    <li class="next"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                    <li class="previous" :class="{ 'disabled' : ! hasPreviousPage }"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
+                    <li class="next" :class="{ 'disabled' : ! hasNextPage }"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
 
             <div v-if="content != null">{{{ content | marked | shellScript }}}</div>
-            <div v-else class="jumbotron">
+            <div v-else class="jumbotron" v-cloak>
                 <h1>Error 404</h1>
                 <p>Page Not Found</p>
             </div>
 
             <nav>
                 <ul class="pager">
-                    <li class="previous"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
-                    <li class="next"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                    <li class="previous" :class="{ 'disabled' : ! hasPreviousPage }"><a href="#" @click="previousPage"><span aria-hidden="true">&larr;</span> Older</a></li>
+                    <li class="next" :class="{ 'disabled' : ! hasNextPage }"><a href="#" @click="nextPage">Newer <span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -130,6 +130,17 @@
 
             this.openPage(page)
         },
+        computed: {
+            currentPageInfo: function () {
+                return this.glossary[this.page]
+            },
+            hasPreviousPage: function () {
+                return this.currentPageInfo.prev != null
+            },
+            hasNextPage: function () {
+                return this.currentPageInfo.next != null
+            }
+        },
         methods: {
             openPage: function (page) {
                 var vm = this
@@ -143,7 +154,8 @@
             setPage: function (page, content) {
                 this.page = page
                 this.content = content
-                document.title = this.glossary[page].title
+                document.title = this.currentPageInfo.title
+
                 window.location.hash = '!'+page
             },
             isActiveMenu: function (entry) {
@@ -153,21 +165,19 @@
                 return ! this.isActiveMenu(entry)
             },
             previousPage: function () {
-                var url = this.glossary[this.page]
-                var page = 'pengenalan'
+                var page = this.page
 
-                if (url.prev != null) {
-                    page = url.prev
+                if (this.hasPreviousPage) {
+                    page = this.currentPageInfo.prev
                 }
 
-                this.openPage(page)
+                return this.openPage(this.page)
             },
             nextPage: function () {
-                var url = this.glossary[this.page]
-                var page = 'pengenalan'
+                var page = this.page
 
-                if (url.next != null) {
-                    page = url.next
+                if (this.hasNextPage) {
+                    page = this.currentPageInfo.next
                 }
 
                 this.openPage(page)

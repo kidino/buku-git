@@ -19,13 +19,13 @@
    Seterusnya, tentukan di mana kunci akan disimpan. Sebaiknya kekalkan pada lokasi yang telah dipilih oleh sistem.
    
    ```
-   Enter file in which to save the key (Users/anda/.ssh/id_rsa)
+   Enter file in which to save the key (Users/anda/.ssh/id_rsa): [_tekan_Enter_]
    ```
 
    Rekakan frasa laluan anda.
 
    ```
-   Enter passphrase (empty for no passphrase): 
+   Enter passphrase (empty for no passphrase):
    Enter same passphrase again:
    ```
 
@@ -55,7 +55,7 @@
    ```sh
    $ eval "$(ssh-agent -s)"
 
-   ``` 
+   ```
    
    ```sh
    $ ssh-add ~/.ssh/id_rsa

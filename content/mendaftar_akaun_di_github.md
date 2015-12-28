@@ -9,4 +9,11 @@ Johan memulakan membuka akaun dengan membuka pelayar sesawang kegemarannya dan p
 ![Halaman Utama github.com] (/images/buku-git-github-frontpage.png)
 *Halaman Utama github.com*
 
+## Memilih Pelan dan Harga
+
+GitHub mempunyai 2 pelan: Peribadi dan Organisasi. Terdapat beberapa pilihan harga yang boleh dipilih sesuai untuk keperluan bagi setiap pelan.
+
+![Pelan dan harga](images/buku-git-pelan-harga-github.png)
+*Senarai pelan dan kadar harga*
+
 Kini, Johan sudah mempunyai akaun di GitHub begitu juga dengan rakan sekerja yang akan bekerjasama dengannya. Seterusnya, mereka perlu menghubungkan akaun GitHub dengan Git yang telah terpasang secara lokal dalam komputer dan laptop masing-masing.

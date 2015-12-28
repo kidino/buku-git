@@ -4,7 +4,7 @@
 
 Setelah berbincang dengan rakan sekerja yang terlibat, Johan telah bersetuju untuk menjadikan GitHub sebagai repositori awan untuk projek mereka. 
 
-Johan memulakan membuka akaun dengan membuka pelayar sesawang kegemarannya dan pergi ke https://github.com/. Ruangan pendaftaran berada di sebelah kanan halaman utama. Johan cuma perlu masukkan nama pengguna, emel, dan kata laluan untuk mendaftar. Sebuah emel akan dihantar  ke alamat emel yang telah didaftarkan untuk pengaktifan akaun.
+Johan memulakan membuka akaun dengan membuka pelayar sesawang kegemarannya dan pergi ke (https://github.com/). Ruangan pendaftaran berada di sebelah kanan halaman utama. Johan cuma perlu masukkan nama pengguna, emel, dan kata laluan untuk mendaftar. Sebuah emel akan dihantar  ke alamat emel yang telah didaftarkan untuk pengaktifan akaun.
 
 ![Halaman Utama github.com] (/images/buku-git-github-frontpage.png)
 *Halaman Utama github.com*

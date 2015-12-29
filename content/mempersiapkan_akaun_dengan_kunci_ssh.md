@@ -92,15 +92,15 @@
 
    ```sh
    $ ssh -T git@github.com
-   ``` 
-
+   ```
+   
    ```sh
    The authenticity of host 'github.com (192.30.252.131)' can't be established.
    RSA key fingerprint is 28:56:05:40:d6:ad:41:d7:72:f9:05:5a:0c:84:c0:86.
    Are you sure you want to continue connecting (yes/no)?
    ```
    
-   Pastikan cap jari sepadan seperti yang diberikan semasa menjana kunci. taip ```yes``` kemudian tekan Enter.
+   Pastikan cap jari sepadan seperti yang diberikan semasa menjana kunci. Taip ```yes``` kemudian tekan Enter.
    
    
    ```sh

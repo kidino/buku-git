@@ -146,12 +146,10 @@
         },
         methods: {
             openPage: function (page) {
-                var vm = this
-                vm.page = page
                 this.$http.get('content/'+page+'.md').then(function (response) {
                     this.setPage(page, response.data)
                 }, function () {
-                    vm.setPage(page, null)
+                    this.setPage(page, null)
                 })
             },
             setPage: function (page, content) {

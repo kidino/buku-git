@@ -1,6 +1,6 @@
 #### Bahagian 1 - Bekerja Sendiri
 
-## Git Add -- Memilih Fail-fail yang ingin disimpan
+# Git Add -- Memilih Fail-fail yang ingin disimpan
 
 > Membina web, kita memulakan dengan membina sebuah fail ```index.html```. Maka itulah yang Johan lakukan.
 

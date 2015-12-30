@@ -32,20 +32,24 @@ var toc = [
         "slug": "git_add_--_memilih_fail-fail_yang_ingin_disimpan"
       },
       {
-        "title": "Git Ignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan",
-        "slug": "git_ignore_--_memaklumkan_pada_git_fail-fail_yang_perlu_diabaikan"
+        "title": "gitignore -- Memaklumkan pada Git Fail-fail yang perlu diabaikan",
+        "slug": "gitignore_--_memaklumkan_pada_git_fail-fail_yang_perlu_diabaikan"
       },
       {
         "title": "Git Commit -- Menyimpan Kerja",
         "slug": "git_commit_--_menyimpan_kerja"
       },
       {
-        "title": "Git Tag -- Menandakan Hasil Kerja",
-        "slug": "git_tag_--_menandakan_hasil_kerja"
+        "title": "Git Log -- Melihat sejarah kerja",
+        "slug": "git_log_--_melihat_sejarah_kerja"
       },
       {
         "title": "Git Checkout -- Melihat Kerja-kerja Lampau",
         "slug": "git_checkout_--_melihat_kerja-kerja_lampau"
+      },
+      {
+        "title": "Git Tag -- Menandakan Hasil Kerja",
+        "slug": "git_tag_--_menandakan_hasil_kerja"
       },
       {
         "title": "Git Revert -- Buang dan Ulang Semula",
@@ -66,6 +70,10 @@ var toc = [
       {
         "title": "Git GUI -- Menyemak Sejarah dan Peta Kerja-kerja",
         "slug": "git_gui_--_menyemak_sejarah_dan_peta_kerja-kerja"
+      },
+      {
+        "title": "Penutup Bahagian 1",
+        "slug": "bahagian_1_-_penutup"
       }
     ]
   },

@@ -61,6 +61,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/shell.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.5.1/vue-resource.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -69,6 +70,8 @@
 
 (function (toc) { "use strict"
     var vue
+
+    Vue.use(VueResource)
 
     function sanitize(name) {
         return name.substr(2, name.length - 2).trim()
@@ -145,9 +148,9 @@
             openPage: function (page) {
                 var vm = this
                 vm.page = page
-                $.get('content/'+page+'.md', function (content) {
-                    vm.setPage(page, content)
-                }).fail(function () {
+                this.$http.get('content/'+page+'.md').then(function (response) {
+                    this.setPage(page, response.data)
+                }, function () {
                     vm.setPage(page, null)
                 })
             },

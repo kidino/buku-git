@@ -81,7 +81,6 @@ $ xcode-select --install
 
 2. Kemudian pasang `git`:
 
-<<<<<<< HEAD
 Terdapat 2 cara untuk memasang Git di GNU/Linux: pengurus pakej dan kompil ***(compile)*** kod sumber.
 
 #### Cara 1: Pengurus Pakej
@@ -107,9 +106,9 @@ $ git --version
 ```
 
 #### Cara 2: Kompil Kod Sumber
-=======
+
     ```sh
     $ sudo yum install git-all
     ```
-> `yum` merupakan alatan bagi menguruskan pakej rpm pada OS Linux yang berasaskan redhat seperti Fedora dan CentOS.
->>>>>>> gh-pages
+`yum` merupakan alatan bagi menguruskan pakej rpm pada OS Linux yang berasaskan redhat seperti Fedora dan CentOS.
+

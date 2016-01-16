@@ -14,3 +14,5 @@ nothing to commit (create/copy files and use "git add" to track)
 ```
 
 Ini adalah contoh maklumbalas yang anda boleh dapat daripada git. Dalam keadaan ini, Git memaklumkan kepada kita bahawa ini projek baru.
+
+Selepas ini kita akan banyak gunakan ```git status``` untuk mengetahui status semasa Git.

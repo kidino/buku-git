@@ -107,8 +107,8 @@ $ git --version
 
 #### Cara 2: Kompil Kod Sumber
 
-    ```sh
-    $ sudo yum install git-all
-    ```
+```sh
+$ sudo yum install git-all
+```
 `yum` merupakan alatan bagi menguruskan pakej rpm pada OS Linux yang berasaskan redhat seperti Fedora dan CentOS.
 

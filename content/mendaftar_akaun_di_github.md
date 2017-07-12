@@ -1,6 +1,6 @@
 #### Bahagian 2 - Bekerja dengan Server Repository (seperti Github, Gitlab, Bitbucket)
 
-## Mendaftar Akaun di Github
+# Mendaftar Akaun di Github
 
 Setelah berbincang dengan rakan sekerja yang terlibat, Johan telah bersetuju untuk menjadikan GitHub sebagai repositori awan untuk projek mereka. 
 

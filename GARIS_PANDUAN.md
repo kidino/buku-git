@@ -44,7 +44,7 @@ Dalam Markdown, setiap baris teks yang biasa (tanpa apa-apa *format*) merupakan 
 
     Manakala teks ini tergolong dalam perenggan kedua.
 
-Setiap perenggan seharusnya *fokus kepada satu mesej* yang ingin disampaikan. Jika suatu perenggan melibatkan banyak mesek, adalah lebih baik untuk memecahkan perenggan tersebut kepada beberapa perenggan yang lain.
+Setiap perenggan seharusnya *fokus kepada satu mesej* yang ingin disampaikan. Jika suatu perenggan melibatkan banyak mesej, adalah lebih baik untuk memecahkan perenggan tersebut kepada beberapa perenggan yang lain.
 
 Selain itu, perenggan juga boleh digunakan untuk *menarik perhatian* pembaca, dengan menggunakan ayat yang pendek dalam satu perenggan. Sebagai contoh (lihat perenggan kedua):
 

@@ -3,7 +3,50 @@
 ## Mempersiapkan Akaun dengan Kunci SSH
 
 ### Windows
+A ) Menggunakan Git Bash. Muat turun di [https://git-scm.com/]
 
+1. Jana Kunci SSH
+
+   Buka *Git Bash* dan masukkan arahan berikut:
+
+   ```sh
+   $ ssh-keygen -t rsa -b 4096 -C "emel.anda@domain.tld"
+   ```
+   
+   Seterusnya, tentukan di mana kunci akan disimpan. Sebaiknya kekalkan pada lokasi yang telah dipilih oleh sistem.
+   
+   ```
+   Enter file in which to save the key (C:\Users\anda\.ssh\id_rsa): [_tekan_Enter_]
+   ```
+
+   Rekakan frasa laluan anda.
+
+   ```
+   Enter passphrase (empty for no passphrase):
+   Enter same passphrase again:
+   ```
+
+   ```
+   Your identification has been saved in C:\Users\anda\.ssh\id_rsa
+   Your public key has been saved in C:\Users\anda\.ssh\id_rsa.pub
+   The key fingerprint is:
+   28:56:05:40:d6:ad:41:d7:72:f9:05:5a:0c:84:c0:86 emel.anda@domain.tld
+   The key's randomart image is:
+   +--[ RSA 2048]----+
+   |   .+*++o+o+o.   |
+   |   .E =o+ +o. .  |
+   |     ..o o.. .   |
+   |     ...    .    |
+   |    o . S        |
+   |   . .           |
+   |                 |
+   |                 |
+   |                 |
+   +-----------------+ 
+   ```
+
+   Kini kunci telah tersedia. Terdapat 2 fail di dalam direktori .ssh/ iaitu 'id_rsa' dan 'id_rsa.pub'.
+   
 ### OS X & Linux
 
 > Cara menjana kunci SSH pada kedua-dua sistem pengoperasian adalah sama dengan terdapat sedikit perbezaan kecil.

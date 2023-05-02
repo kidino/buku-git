@@ -19,7 +19,7 @@ Untuk melihat terperinci tentang `tag` yang dibuat, boleh taip:
 ```sh
 $ git show v1.1-beta
 commit ca82a6dff817ec66f44342007202690a93763949
-Author: Nurulazrad Murad <nurulazradm@herbalife.com>
+Author: Nurulazrad Murad <nurulazrad@gmail.com>
 Date:   Mon Dec 18 21:52:11 2008 +0800
 
   changed the version number
